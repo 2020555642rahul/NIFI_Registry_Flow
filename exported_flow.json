@@ -1,0 +1,358 @@
+{
+  "snapshotMetadata" : {
+    "version" : 1,
+    "timestamp" : 1713179260826,
+    "author" : "anonymous",
+    "comments" : ""
+  },
+  "flowContents" : {
+    "identifier" : "7888b20b-5d99-3b83-aa77-b3522500d59f",
+    "instanceIdentifier" : "e02fb722-018e-1000-417d-ff286cb0ef05",
+    "name" : "Parameter_Context_Practice",
+    "comments" : "",
+    "position" : {
+      "x" : 680.0,
+      "y" : 312.0
+    },
+    "processGroups" : [ ],
+    "remoteProcessGroups" : [ ],
+    "processors" : [ {
+      "identifier" : "41a8a65d-49bd-3b4a-9fec-7fb1cd399985",
+      "instanceIdentifier" : "e02fe6b6-018e-1000-7219-1bc105aac1d8",
+      "name" : "GetFile",
+      "comments" : "",
+      "position" : {
+        "x" : 88.0,
+        "y" : 24.0
+      },
+      "type" : "org.apache.nifi.processors.standard.GetFile",
+      "bundle" : {
+        "group" : "org.apache.nifi",
+        "artifact" : "nifi-standard-nar",
+        "version" : "1.25.0"
+      },
+      "properties" : {
+        "Keep Source File" : "true",
+        "Minimum File Age" : "0 sec",
+        "Polling Interval" : "0 sec",
+        "Input Directory" : "/home/rahulksi184/Softwares/input_file",
+        "Batch Size" : "10",
+        "Minimum File Size" : "0 B",
+        "Ignore Hidden Files" : "true",
+        "Recurse Subdirectories" : "true",
+        "File Filter" : "file.csv"
+      },
+      "propertyDescriptors" : {
+        "Keep Source File" : {
+          "name" : "Keep Source File",
+          "displayName" : "Keep Source File",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Minimum File Age" : {
+          "name" : "Minimum File Age",
+          "displayName" : "Minimum File Age",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Polling Interval" : {
+          "name" : "Polling Interval",
+          "displayName" : "Polling Interval",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Input Directory" : {
+          "name" : "Input Directory",
+          "displayName" : "Input Directory",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Maximum File Age" : {
+          "name" : "Maximum File Age",
+          "displayName" : "Maximum File Age",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "name" : "Batch Size",
+          "displayName" : "Batch Size",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Maximum File Size" : {
+          "name" : "Maximum File Size",
+          "displayName" : "Maximum File Size",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Minimum File Size" : {
+          "name" : "Minimum File Size",
+          "displayName" : "Minimum File Size",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Ignore Hidden Files" : {
+          "name" : "Ignore Hidden Files",
+          "displayName" : "Ignore Hidden Files",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Recurse Subdirectories" : {
+          "name" : "Recurse Subdirectories",
+          "displayName" : "Recurse Subdirectories",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "File Filter" : {
+          "name" : "File Filter",
+          "displayName" : "File Filter",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Path Filter" : {
+          "name" : "Path Filter",
+          "displayName" : "Path Filter",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        }
+      },
+      "style" : { },
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "executionNode" : "ALL",
+      "penaltyDuration" : "30 sec",
+      "yieldDuration" : "1 sec",
+      "bulletinLevel" : "WARN",
+      "runDurationMillis" : 0,
+      "concurrentlySchedulableTaskCount" : 1,
+      "autoTerminatedRelationships" : [ ],
+      "scheduledState" : "ENABLED",
+      "retryCount" : 10,
+      "retriedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "maxBackoffPeriod" : "10 mins",
+      "componentType" : "PROCESSOR",
+      "groupIdentifier" : "7888b20b-5d99-3b83-aa77-b3522500d59f"
+    }, {
+      "identifier" : "d1d8acbd-ec4d-3577-ae0c-022af559d0ca",
+      "instanceIdentifier" : "e0300449-018e-1000-60a8-ee1a7d967950",
+      "name" : "PutFile",
+      "comments" : "",
+      "position" : {
+        "x" : 632.0,
+        "y" : 64.0
+      },
+      "type" : "org.apache.nifi.processors.standard.PutFile",
+      "bundle" : {
+        "group" : "org.apache.nifi",
+        "artifact" : "nifi-standard-nar",
+        "version" : "1.25.0"
+      },
+      "properties" : {
+        "Create Missing Directories" : "true",
+        "Conflict Resolution Strategy" : "fail"
+      },
+      "propertyDescriptors" : {
+        "Group" : {
+          "name" : "Group",
+          "displayName" : "Group",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Owner" : {
+          "name" : "Owner",
+          "displayName" : "Owner",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Create Missing Directories" : {
+          "name" : "Create Missing Directories",
+          "displayName" : "Create Missing Directories",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Permissions" : {
+          "name" : "Permissions",
+          "displayName" : "Permissions",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Maximum File Count" : {
+          "name" : "Maximum File Count",
+          "displayName" : "Maximum File Count",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Last Modified Time" : {
+          "name" : "Last Modified Time",
+          "displayName" : "Last Modified Time",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Directory" : {
+          "name" : "Directory",
+          "displayName" : "Directory",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        },
+        "Conflict Resolution Strategy" : {
+          "name" : "Conflict Resolution Strategy",
+          "displayName" : "Conflict Resolution Strategy",
+          "identifiesControllerService" : false,
+          "sensitive" : false
+        }
+      },
+      "style" : { },
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "executionNode" : "ALL",
+      "penaltyDuration" : "30 sec",
+      "yieldDuration" : "1 sec",
+      "bulletinLevel" : "WARN",
+      "runDurationMillis" : 0,
+      "concurrentlySchedulableTaskCount" : 1,
+      "autoTerminatedRelationships" : [ ],
+      "scheduledState" : "ENABLED",
+      "retryCount" : 10,
+      "retriedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "maxBackoffPeriod" : "10 mins",
+      "componentType" : "PROCESSOR",
+      "groupIdentifier" : "7888b20b-5d99-3b83-aa77-b3522500d59f"
+    } ],
+    "inputPorts" : [ ],
+    "outputPorts" : [ ],
+    "connections" : [ {
+      "identifier" : "01fbbf0e-c974-3e46-a00f-9fdb24d0f61a",
+      "instanceIdentifier" : "e03072c5-018e-1000-30d1-63c159a5d90f",
+      "name" : "",
+      "source" : {
+        "id" : "d1d8acbd-ec4d-3577-ae0c-022af559d0ca",
+        "type" : "PROCESSOR",
+        "groupId" : "7888b20b-5d99-3b83-aa77-b3522500d59f",
+        "name" : "PutFile",
+        "comments" : "",
+        "instanceIdentifier" : "e0300449-018e-1000-60a8-ee1a7d967950"
+      },
+      "destination" : {
+        "id" : "60a6d81c-571e-305a-bf81-6becc23be1a3",
+        "type" : "FUNNEL",
+        "groupId" : "7888b20b-5d99-3b83-aa77-b3522500d59f",
+        "name" : "Funnel",
+        "comments" : "",
+        "instanceIdentifier" : "e0305447-018e-1000-cca7-a3966feb1704"
+      },
+      "labelIndex" : 1,
+      "zIndex" : 0,
+      "selectedRelationships" : [ "failure" ],
+      "backPressureObjectThreshold" : 10000,
+      "backPressureDataSizeThreshold" : "1 GB",
+      "flowFileExpiration" : "0 sec",
+      "prioritizers" : [ ],
+      "bends" : [ ],
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "partitioningAttribute" : "",
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "componentType" : "CONNECTION",
+      "groupIdentifier" : "7888b20b-5d99-3b83-aa77-b3522500d59f"
+    }, {
+      "identifier" : "6d786b8f-adbe-325c-bdbd-3f9f368e6c16",
+      "instanceIdentifier" : "e0304810-018e-1000-1efa-3067dfe035b5",
+      "name" : "",
+      "source" : {
+        "id" : "d1d8acbd-ec4d-3577-ae0c-022af559d0ca",
+        "type" : "PROCESSOR",
+        "groupId" : "7888b20b-5d99-3b83-aa77-b3522500d59f",
+        "name" : "PutFile",
+        "comments" : "",
+        "instanceIdentifier" : "e0300449-018e-1000-60a8-ee1a7d967950"
+      },
+      "destination" : {
+        "id" : "3756afa3-1e00-3bc1-97ce-6c6ea8e74a23",
+        "type" : "FUNNEL",
+        "groupId" : "7888b20b-5d99-3b83-aa77-b3522500d59f",
+        "name" : "Funnel",
+        "comments" : "",
+        "instanceIdentifier" : "e0301649-018e-1000-ba88-6f0c80412e4c"
+      },
+      "labelIndex" : 1,
+      "zIndex" : 0,
+      "selectedRelationships" : [ "success" ],
+      "backPressureObjectThreshold" : 10000,
+      "backPressureDataSizeThreshold" : "1 GB",
+      "flowFileExpiration" : "0 sec",
+      "prioritizers" : [ ],
+      "bends" : [ ],
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "partitioningAttribute" : "",
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "componentType" : "CONNECTION",
+      "groupIdentifier" : "7888b20b-5d99-3b83-aa77-b3522500d59f"
+    }, {
+      "identifier" : "e17b2707-3c7b-30f7-aeb2-d18d8d12bec1",
+      "instanceIdentifier" : "e0302888-018e-1000-523d-968faca990d1",
+      "name" : "",
+      "source" : {
+        "id" : "41a8a65d-49bd-3b4a-9fec-7fb1cd399985",
+        "type" : "PROCESSOR",
+        "groupId" : "7888b20b-5d99-3b83-aa77-b3522500d59f",
+        "name" : "GetFile",
+        "comments" : "",
+        "instanceIdentifier" : "e02fe6b6-018e-1000-7219-1bc105aac1d8"
+      },
+      "destination" : {
+        "id" : "d1d8acbd-ec4d-3577-ae0c-022af559d0ca",
+        "type" : "PROCESSOR",
+        "groupId" : "7888b20b-5d99-3b83-aa77-b3522500d59f",
+        "name" : "PutFile",
+        "comments" : "",
+        "instanceIdentifier" : "e0300449-018e-1000-60a8-ee1a7d967950"
+      },
+      "labelIndex" : 1,
+      "zIndex" : 0,
+      "selectedRelationships" : [ "success" ],
+      "backPressureObjectThreshold" : 10000,
+      "backPressureDataSizeThreshold" : "1 GB",
+      "flowFileExpiration" : "0 sec",
+      "prioritizers" : [ ],
+      "bends" : [ ],
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "partitioningAttribute" : "",
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "componentType" : "CONNECTION",
+      "groupIdentifier" : "7888b20b-5d99-3b83-aa77-b3522500d59f"
+    } ],
+    "labels" : [ ],
+    "funnels" : [ {
+      "identifier" : "3756afa3-1e00-3bc1-97ce-6c6ea8e74a23",
+      "instanceIdentifier" : "e0301649-018e-1000-ba88-6f0c80412e4c",
+      "position" : {
+        "x" : 453.99999604401773,
+        "y" : 244.00000169542102
+      },
+      "componentType" : "FUNNEL",
+      "groupIdentifier" : "7888b20b-5d99-3b83-aa77-b3522500d59f"
+    }, {
+      "identifier" : "60a6d81c-571e-305a-bf81-6becc23be1a3",
+      "instanceIdentifier" : "e0305447-018e-1000-cca7-a3966feb1704",
+      "position" : {
+        "x" : 846.9999960440177,
+        "y" : 284.000001695421
+      },
+      "componentType" : "FUNNEL",
+      "groupIdentifier" : "7888b20b-5d99-3b83-aa77-b3522500d59f"
+    } ],
+    "controllerServices" : [ ],
+    "variables" : { },
+    "defaultFlowFileExpiration" : "0 sec",
+    "defaultBackPressureObjectThreshold" : 10000,
+    "defaultBackPressureDataSizeThreshold" : "1 GB",
+    "componentType" : "PROCESS_GROUP",
+    "flowFileConcurrency" : "UNBOUNDED",
+    "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE"
+  },
+  "externalControllerServices" : { },
+  "parameterProviders" : { },
+  "parameterContexts" : { },
+  "flowEncodingVersion" : "1.0"
+}
